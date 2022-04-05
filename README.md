@@ -6,19 +6,21 @@ Django web frontend for [pytr](https://github.com/marzzzello/pytr) to download a
 ### How to use
 
 1. Submit your mobile number and PIN code
-2. Wait for the 2FA/OTP code sent to your mobile app
-3. Submit your 2FA/OTP code and wait. Be patient!
+2. Wait for the 2FA/OTP code, which is sent to your mobile app (iOS/Android)
+3. Submit your 2FA/OTP code and confirm the JS popup. Wait and be patient!
 4. Enjoy your whole trading history as one-time download (zip)
-5. Optionally upload all PDFs to your personal account on https://www.parqet.com/ for a depot analysis
-6. Optionally stargaze this repository to show your affection. I'll be happy ;-)
+
+- You can optionally upload your PDFs to https://www.parqet.com/ for a depot analysis. 
+- Please stargaze this repository to show your affection. I would be pleased!
 
 ## Overview of depot data
 The following depot data is retrieved:
+
 ![image](https://user-images.githubusercontent.com/21357789/161810816-74a130f6-4876-439c-803e-254a5b6b71b2.png)
 
 ### Building the docker container manually (recommended)
 ````
-https://github.com/l4rm4nd/TRSync
+git clone https://github.com/l4rm4nd/TRSync
 cd TRSync
 sudo docker build -t trsync -f docker/Dockerfile .
 ````
@@ -26,13 +28,13 @@ sudo docker build -t trsync -f docker/Dockerfile .
 ### Running the docker container (ephemeral, no persisted data)
 
 ````
-sudo docker run -it --name trsync -p 127.0.0.1:8000:8000 -e SECRET_KEY=<YOUR-SECRET> -e DOMAIN=<DOMAIN-HOSTNAME> trsync:latest
+sudo docker run -it --rm -d --name trsync -p 127.0.0.1:8000:8000 -e SECRET_KEY=<YOUR-SECRET> -e DOMAIN=<DOMAIN-HOSTNAME> trsync:latest
 ````
 
 If you trust me, please don't, you can use my public repository [l4rm4nd/trsync](https://hub.docker.com/repository/docker/l4rm4nd/trsync/general) on Dockerhub:
 
 ````
-sudo docker run -it --name trsync -p 127.0.0.1:8000:8000 -e SECRET_KEY=<YOUR-SECRET> -e DOMAIN=<DOMAIN-HOSTNAME> l4rm4nd/trsync:latest
+sudo docker run -it --rm -d --name trsync -p 127.0.0.1:8000:8000 -e SECRET_KEY=<YOUR-SECRET> -e DOMAIN=<DOMAIN-HOSTNAME> l4rm4nd/trsync:latest
 ````
 
 ### Parameters
