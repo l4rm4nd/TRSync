@@ -1,0 +1,10 @@
+Django==3.2.12
+django-bootstrap3==21.2
+django-session-security==2.6.6
+django-csp
+django-http-referrer-policy
+django-feature-policy
+python-dotenv
+pytr
+django-phonenumber-field[phonenumbers]
+jsonpickle
