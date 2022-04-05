@@ -31,7 +31,7 @@ sudo docker build -t trsync -f docker/Dockerfile .
 sudo docker run -it --rm -d --name trsync -p 127.0.0.1:8000:8000 -e SECRET_KEY=<YOUR-SECRET> -e DOMAIN=<DOMAIN-HOSTNAME> trsync:latest
 ````
 
-If you trust me, please don't, you can use my public repository [l4rm4nd/trsync](https://hub.docker.com/repository/docker/l4rm4nd/trsync/general) on Dockerhub:
+If you trust me, please don't, you can use my [public repository on Dockerhub](https://hub.docker.com/repository/docker/l4rm4nd/trsync):
 
 ````
 sudo docker run -it --rm -d --name trsync -p 127.0.0.1:8000:8000 -e SECRET_KEY=<YOUR-SECRET> -e DOMAIN=<DOMAIN-HOSTNAME> l4rm4nd/trsync:latest
