@@ -6043,8 +6043,8 @@ hr:before {
                            <p id="text15" class="style2">Django web frontent for the Python script <a href="https://github.com/marzzzello/pytr">pytr</a>.</p>
                            <form id="form02" method="post" action='/api/login/'>{% csrf_token %}
                               <div class="inner">
-                                 <div class="field"><input type="tel" size=150 name="tel" maxlength="16" placeholder="+49..." required=""></div>
-                                 <div class="field"><input type="password" name="pin" minlength="4" maxlength="4" placeholder="PIN" required=""></div>
+                                 <div class="field"><input type="tel" title="mobile-nr" name="tel" maxlength="15" placeholder="+49..." required=""></div>
+                                 <div class="field"><input type="password" pattern="[0-9]{4}" title="app-pin" name="pin" minlength="4" maxlength="4" placeholder="PIN" required=""></div>
                                  </div>
                                  <div>
                                  <div style="margin-top: 20px" class="actions">
@@ -6058,7 +6058,7 @@ hr:before {
                            </form>
 						   <form id="form02" method="post" action='/api/download/'>{% csrf_token %}
 							<div class="inner">
-							   <div class="field"><input type="password" id="otp" name="otp" minlength="4" maxlength="4" required placeholder="OTP"></div>
+							   <div class="field"><input type="password" pattern="[0-9]{4}" id="otp" title="otp-2fa" name="otp" minlength="4" maxlength="4" required placeholder="OTP"></div>
 							   </div>
 							   <div>
 							   <div style="margin-top: 20px" class="actions">
