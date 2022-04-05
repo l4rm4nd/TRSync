@@ -36,6 +36,7 @@ If you trust me, please don't, you can use my [public repository on Dockerhub](h
 ````
 sudo docker run -it --rm -d --name trsync -p 127.0.0.1:8000:8000 -e SECRET_KEY=<YOUR-SECRET> -e DOMAIN=<DOMAIN-HOSTNAME> l4rm4nd/trsync:latest
 ````
+Afterwards, the web frontend is accessible at https://127.0.0.1:8000. Use a reverse proxy and SSL/TLS if you plan to expose the instance.
 
 ### Parameters
 Container images are configured using parameters passed at runtime (such as those above). These parameters are separated by a colon and indicate <external>:<internal> respectively. For example, -p 8888:8000 would expose port 8000 from inside the container to be accessible from the host's IP on port 8888 outside the container.
