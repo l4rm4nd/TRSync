@@ -1,3 +1,5 @@
+[![docker-ci](https://github.com/l4rm4nd/TRSync/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/l4rm4nd/TRSync/actions/workflows/docker-image.yml)
+
 # TRSync
 Django web frontend for [pytr](https://github.com/marzzzello/pytr) to download all Trade Republic depot data.
 
