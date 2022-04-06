@@ -1,44 +1,21 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from types import coroutine
-from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import get_object_or_404, render, redirect
-from django.contrib.auth.models import User
-from django.contrib.auth.decorators import login_required, permission_required
-from django.views.decorators.http import require_http_methods
-from django.utils.html import conditional_escape
-from django.views.generic.base import TemplateView
+from django.http import HttpResponse
+from django.shortcuts import render
 from polls.forms import *
 from polls.models import *
-from datetime import date, time, datetime, timedelta
-from django.utils import timezone
-from django.contrib.auth import get_user_model
-import re
-import json
+from datetime import date
+from django.views.generic.base import TemplateView
 import os
 import sys
-import datetime
-import subprocess
 import phonenumbers
-from django.core import serializers
-import time
 from pytr.dl import DL
 from pytr.account import login
-from pytr.portfolio import Portfolio
-from pytr.alarms import Alarms
-from pytr.details import Details
 from pytr.api import TradeRepublicApi
 from concurrent.futures import as_completed
-from pathlib import Path
-from requests_futures.sessions import FuturesSession
-from requests import session
-from pytr.utils import preview, Timeline, get_logger
-from pytr.api import TradeRepublicError
 import jsonpickle
 import asyncio
-import time
 import shutil
-from datetime import date
 from wsgiref.util import FileWrapper
 
 def error_404(request, *args, **argv):
