@@ -162,6 +162,8 @@ def download(request):
 				# remove zip file
 				print("Removing all sensitive files and objects.")
 				os.remove(path_to_zip)
+				# remove dir at /tmp/<session-id>
+				shutil.rmtree(path)
 				# remove model object with class object
 				Account.objects.filter(uuid=session).delete()
 				# return zip file for download
