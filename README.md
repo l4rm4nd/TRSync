@@ -7,10 +7,11 @@ Django web frontend for [pytr](https://github.com/marzzzello/pytr) to download a
 
 ### How to use
 
-1. Submit your mobile number and PIN code
-2. Wait for the 2FA/OTP code, which is sent to your mobile app (iOS/Android)
-3. Submit your 2FA/OTP code and confirm the JS popup. Wait and be patient!
-4. Enjoy your whole trading history as one-time download (zip)
+1. Activate your Trade Republic account for web access on https://app.traderepublic.com/login
+2. Submit your mobile number and PIN code
+3. Wait for the 2FA/OTP code, which is sent to your mobile app (iOS/Android)
+4. Submit your 2FA/OTP code and confirm the JS popup. Wait and be patient!
+5. Enjoy your whole trading history as one-time download (zip)
 
 - You can optionally upload your PDFs to https://www.parqet.com/ for a depot analysis. 
 - Please stargaze this repository to show your affection. I would be pleased!
