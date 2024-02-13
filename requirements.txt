@@ -1,4 +1,4 @@
-Django==3.2.23
+Django==3.2.25
 django-bootstrap3==21.2
 django-session-security==2.6.6
 django-csp
