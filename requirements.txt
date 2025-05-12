@@ -5,6 +5,6 @@ django-csp
 django-http-referrer-policy
 django-feature-policy
 python-dotenv
-pytr
+pytr==0.4.2
 django-phonenumber-field[phonenumbers]
 jsonpickle
