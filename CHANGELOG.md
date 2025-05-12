@@ -1,3 +1,12 @@
+## [0.1.2](https://github.com/l4rm4nd/TRSync/compare/v0.1.1...v0.1.2) (2025-05-12)
+
+
+### Bug Fixes
+
+* fix pytr version ([e0d26d0](https://github.com/l4rm4nd/TRSync/commit/e0d26d0d02bc515ae75a09d2df87c128e9048995))
+
+
+
 ## [0.1.1](https://github.com/l4rm4nd/TRSync/compare/v0.1.0...v0.1.1) (2024-07-19)
 
 
